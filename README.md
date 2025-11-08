@@ -6,7 +6,13 @@ This Project serves as an artifical solar system generator, which will stochasdt
 in main stell ar sequence, light physics, planetary motion and orbiotal mechanics. In its current verrsion this model makes some generalizations including genrating some stellar and planetary parametrers from rng's instead of using the mathamtical relationships that exist betwen these parameters. This will hopefully change as time goes on, with more and more astrophysics equations being implemented into the model. At the time of writing the text bellow ~ 4 years ago I was an inexperienced python
 programmer. I now have the experince to say that this project will and should continue in python with pyside2 as the main gui. I should be able to implement all of the below  in native python. I may someday down the road move it to a rest api on a webserver, however for now making a native desktop application in Pyside2 should suffice fof what i am interested in. 
 
-check out the example.txt file to see what kinds of parameters this model has to offer
+Near Future Additions
+    Moon Generation
+    Proper Planetary Movement Around the Star (Necessary for Graphics update)
+    Surface Generation
+        Generated Surface Features - For SImulated Environments
+    
+
 
 List of Anticipated features
 1.GUI application 

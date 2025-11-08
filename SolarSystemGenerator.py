@@ -22,8 +22,8 @@ def roll_dice(N, S):
 
 
 class Star:
-    '''This class defines what a star is. It has all of the attributes necessary to describe a star, as well as methods
-    to give it a name, randomly generate its stats, and cassify it according to modern classification systems.'''
+    """This class defines what a star is. It has all the attributes necessary to describe a star, as well as methods
+    to give it a name, randomly generate its stats, and classify it according to modern classification systems."""
 
     def __init__(self):
         self.mass = 0
@@ -59,7 +59,8 @@ class Star:
         '''Rolls 7, 4 sided dice and adds them up. Classifies a star according to surface temperature
         based on the value of the roll. If the value is higher than 18, a second roll is used.
 
-        This is obviosduly built from a table of values that bases luminosity, radius, and mass based off temperature.
+        The next step is to use a table of values that determines a stars classification based on its surface
+        temperature.
         '''
         roll1 = roll_dice(7, 4)
         roll2 = -1
@@ -125,7 +126,7 @@ class Star:
         self.habitable_upper = upperbound
 
     def ro(self):
-        '''Sets the habitable lower bound for a star in AU. This is as far out from a star a planet can be
+        '''Sets the habitable lower bound for a star in AU. This is as close to a star a planet can be
         that water could hypothetically be liquid'''
         lowerbound = math.sqrt(self.luminosity / 0.53)
         self.habitable_lower = lowerbound
@@ -187,7 +188,7 @@ class Planet:
         # What is needed now is to simulate the fact that planets are much smaller the closer they are to the sun, and
         # much larger the farther away they are from the sun. This might mean basing the mass and radius first on
         # distance from the sun, then on their relationship to one another.
-        """Another consideration for this function is to calculate mass and radius based"""
+
 
         mass = uniform(0.05, 315.0)
         self.mass_earth = mass
